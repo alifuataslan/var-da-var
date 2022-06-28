@@ -1,0 +1,241 @@
+/*--------- hero slider start ---------*/
+.hero-bg {
+    background-repeat: no-repeat;
+    &__1 {
+        height: 570px;
+        display: flex;
+        align-items: center;
+        // responsive
+        @media #{$md-device} {
+            height: 420px;
+        }
+        @media #{$sm-device} {
+            height: 360px;
+        }
+        @media #{$xs-device} {
+            height: 300px;
+        }
+        @media #{$xxs-device} {
+            height: 500px;
+        }
+        .content-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 30px;
+            // responsive
+            @media #{$md-device, $sm-device} {
+                padding-top: 40px;
+            }
+            @media #{$xxs-device} {
+                display: block;
+            }
+            .slider-content {
+                max-width: 45%;
+                flex: 1 0 45%;
+                // responsive
+                @media #{$xxs-device} {
+                    max-width: 100%;
+                    flex: 1 0 100%;
+                    text-align: center;
+                    margin-bottom: 40px;
+                }
+                h1 {
+                    font-size: 38px;
+                    font-weight: 800;
+                    line-height: 1.1;
+                    text-transform: uppercase;
+                    // responsive
+                    @media #{$md-device} {
+                        font-size: 32px;
+                    }
+                    @media #{$sm-device} {
+                        font-size: 26px;
+                    }
+                    @media #{$xs-device} {
+                        line-height: 1.3;
+                    }
+                }
+                p {
+                    padding-top: 15px;
+                    padding-bottom: 20px;
+                }
+            }
+            .slider-img {
+                max-width: 45%;
+                flex: 1 0 45%;
+                // responsive
+                @media #{$xxs-device} {
+                    max-width: 70%;
+                    flex: 1 0 70%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    // home slider 2
+    &__2 {
+        background-position: center;
+        background-size: cover;
+        height: 464px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // responsive
+        @media #{$sm-device} {
+            height: 350px;
+        }
+        @media #{$xs-device} {
+            height: 300px;
+        }
+        .content-inner {
+            .slider-content {
+                // responsive
+                @media #{$xxs-device} {
+                    padding: 0 15px;
+                }
+                h1 {
+                    color: $white;
+                    font-size: 44px;
+                    line-height: 1.2;
+                    text-transform: capitalize;
+                    font-family: $font-family-heading;
+                    padding-bottom: 20px;
+                    // responsive
+                    @media #{$sm-device} {
+                        font-size: 32px;
+                        padding-bottom: 10px;
+                    }
+                    @media #{$xs-device} {
+                        font-size: 26px;
+                        padding-bottom: 10px;
+                    }
+                    @media #{$xxs-device} {
+                        padding-bottom: 10px;
+                    }
+                }
+                p {
+                    color: $white;
+                    font-size: 15px;
+                    font-weight: 500;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+    &__4,
+    &__5 {
+        .content-inner {
+            .slider-content {
+                h1 {
+                    font-size: 37px;
+                    line-height: 1.2;
+                    padding-bottom: 5px;
+                    // responsive
+                    @media #{$sm-device} {
+                        font-size: 26px;
+                    }
+                }
+                p {
+                    font-size: 17px;
+                    padding-bottom: 30px;
+                    // responsive
+                    @media #{$xs-device} {
+                        padding-bottom: 20px;
+                    }
+                    @media #{$xxs-device} {
+                        font-size: 14px;
+                        line-height: 1.3;
+                    }
+                }
+                &__style-2 {
+                    max-width: 600px;
+                    // responsive
+                    @media #{$md-device}{
+                        max-width: 490px;
+                    }
+                    h1 {
+                        font-size: 55px;
+                        padding-bottom: 15px;
+                        // responsive
+                        @media #{$md-device}{
+                            font-size: 42px;
+                        }
+                        @media #{$sm-device}{
+                            font-size: 30px;
+                        }
+                        @media #{$xxs-device}{
+                            font-size: 26px;
+                        }
+                    }
+                    p {
+                        font-size: 20px;
+                        // responsive
+                        @media #{$sm-device}{
+                            font-size: 17px;
+                        }
+                    }
+                    .btn__bg {
+                        padding: 12px 35px 10px;
+                    }
+                }
+            }
+        }
+    }
+    &__5 {
+        height: 800px;
+        // responsive
+        @media #{$xlmax-device} {
+            height: 570px;
+        }
+        @media #{$md-device} {
+            height: 450px;
+        }
+        @media #{$sm-device} {
+            height: 350px;
+        }
+    }
+}
+
+/*--------- hero slider end ---------*/
+
+// hero slider style 6
+.hero-banner-top {
+	margin-top: 30px;
+	// responsive
+	@media #{$md-device, $sm-device} {
+		margin-top: 0;
+	}
+}
+.hero-slider-category {
+	.hero-bg {
+		&__2 {
+			justify-content: inherit;
+			.content-inner {
+                padding-left: 80px;
+                // responsive
+                @media #{$sm-device} {
+                    padding-left: 30px;
+                }
+			}
+		}
+	}
+}
+
+// slider text animation
+.slick-current {
+    .slider-content {
+        h1 {
+            animation-name: fadeInUp;
+            animation-duration: 1s; 
+        }
+        p {
+            animation-name: fadeInUp;
+            animation-duration: 1.5s; 
+        }
+        a {
+            animation-name: fadeInUp;
+            animation-duration: 1.8s; 
+        }
+    }
+}

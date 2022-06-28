@@ -1,0 +1,102 @@
+/*------- service features area start -------*/
+.service-features-inner {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 7px;
+    padding: 34px 0;
+    position: relative;
+    z-index: 11;
+    // responsive
+    @media #{$sm-device} {
+        display: block;
+    }
+    // home style 2
+    &__no-radius {
+        border-radius: 0;
+    }
+}
+.single-features-item {
+    display: flex;
+    align-items: center;
+    padding-right: 70px;
+    border-right: 1px solid rgba(255,255,255,0.5);
+    // responsive
+    @media #{$lg-device} {
+        padding-right: 15px;
+    }
+    @media #{$md-device} {
+        display: block;
+        padding: 0 2px;
+        text-align: center;
+        border: none;
+    }
+    @media #{$sm-device} {
+        justify-content: center;
+        padding-right: 0;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    @media #{$xxs-device} {
+        padding: 0 15px;
+    }
+    .features-icon {
+        color: #a5e5ca;
+        font-size: 48px;
+        padding-right: 20px;
+        @media #{$md-device} {
+            padding-right: 0;
+            margin-bottom: 10px;
+        }
+        i {
+            line-height: 1;
+            transition: 0.8s;
+            transform: rotate(0);
+            display: block;
+        }
+    }
+    .features-content {
+        h5 {
+            color: $white;
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 700;
+            padding-bottom: 3px;
+            text-transform: uppercase;
+        }
+        p {
+            color: #f9f9f9;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+    &:last-child {
+        padding-right: 0;
+        border-right: none;
+    }
+    &:hover {
+        .features-icon {
+            i {
+                transform: rotate(360deg);
+            }
+        } 
+    }
+}
+.service-features-inner__style-2 {
+    border-radius: 0;
+    .single-features-item {
+        .features-icon {
+            color: $theme-color;
+        } 
+        .features-content {
+            h5 {
+                color: $black-soft;
+            }
+            p {
+                color: $paragraph;
+            }
+        }
+    }
+}
+/*-------- service features area end --------*/

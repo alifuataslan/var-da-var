@@ -1,0 +1,144 @@
+
+/*------- blog main content wrapper start --------*/
+.blog-inner-content {
+    .tag-line {
+        padding: 10px 0;
+        margin-top: 20px;
+        border-top: 1px solid $bdr-color;
+        border-bottom: 1px solid $bdr-color;
+        h5 {
+            color: $black-soft;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        a {
+            color: $black-soft;
+            font-style: italic;
+            font-size: 14px;
+            text-transform: capitalize;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+}
+/*--- blog main content wrapper end ---*/
+
+/*--- blog comment section start ---*/
+.comment-section {
+    h3 {
+        color: $black-soft;
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 600;
+        padding-bottom: 15px;
+        text-transform: capitalize;
+    }
+    ul {
+        li {
+            display: flex;
+            padding: 10px 20px;
+            margin-bottom: 30px;
+            border: 1px solid $bdr-color;
+            &:last-child {
+                margin-bottom: 5px;
+            }
+            // Responsive
+            @media #{$xxs-device} {
+                display: block;
+            }
+            .author-avatar {
+                flex-basis: 66px;
+                max-height: 62px;
+                margin-right: 10px;
+                // Responsive
+                @media #{$xxs-device} {
+                    flex-basis: 100%;
+                    max-width: 66px;
+                    height: 62px;
+                }
+            }
+            &.comment-children {
+                margin-left: 40px;
+            }
+            .comment-body {
+                flex-basis: 100%;
+                h5 {
+                    color: $black-soft;
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding-bottom: 5px;
+                    text-transform: capitalize;
+                }
+                .comment-post-date {
+                    color: $paragraph;
+                    padding-bottom: 10px;
+                }
+                .reply-btn {
+                    float: right;
+                    a {
+                        color: $black-soft;
+                        font-size: 12px;
+                        display: inline-block;
+                        padding: 5px 15px 2px;
+                        border-radius: 20px;
+                        text-transform: capitalize;
+                        border: 1px solid $bdr-color;
+                        &:hover {
+                            color: $white !important;
+                            border-color: $theme-color;
+                            background-color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*--- blog comment section end ---*/
+
+/*------ blog comment box start -----*/
+.blog-comment-wrapper {
+    h3 {
+        color: $black-soft;
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 600;
+        padding-bottom: 15px;
+        text-transform: capitalize;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    p {
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+    .comment-post-box {
+        label {
+            color: $black-soft;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
+            text-transform: capitalize;
+        }
+        .coment-field {
+            background: #f8f8f8;
+            border: none;
+            color: $paragraph;
+            padding: 8px 10px;
+            width: 100%;
+        }
+        textarea {
+            height: 130px;
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+            background: #f8f8f8;
+            border: none;
+        }
+    }
+}
+
+/*------- blog comment box end --------*/

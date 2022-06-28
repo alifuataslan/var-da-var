@@ -1,0 +1,111 @@
+
+
+/*------- Buttons Style here -------*/
+.btn {
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: $theme-color;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: none;
+    transition: 0.4s;
+    display: inline-block;
+    padding: 8px 25px 5px;
+    border: 1px solid $theme-color;
+    &:hover {
+        color: $white;
+        background-color: $theme-color;
+    }
+    &__bg {
+        color: $white;
+        font-size: 16px;
+        border-radius: 4px;
+        background-color: $theme-color;
+        &:hover {
+            border-color: $theme-color-2;
+            background-color: $theme-color-2;
+        }
+    }
+    &__sqr {
+        border-radius: 0;
+    }
+    &__shop {
+        color: $white;
+        font-size: 16px;
+        font-weight: 700;
+        border-color: $white;
+        border-radius: 4px;
+        font-family: $font-family-lora;
+        // responsive
+        @media #{$xs-device} {
+            padding: 6px 15px;
+        }
+        &:hover {
+            color: $black-soft;
+            border-color: $white;
+            background-color: $white;
+        }
+    }
+    &__no-border {
+        border: 0;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: underline;
+        transition: 0.4s;
+        padding: 0;
+        &:hover {
+            color: $theme-color !important;
+            background-color: transparent !important;
+            text-decoration: underline;
+        }
+    }
+    &__bg-black {
+        color: $white !important;
+        background-color: $black-soft;
+        &:hover {
+            border-color: $theme-color !important;
+            background-color: $theme-color !important;
+        }
+    }
+    &__bg-brand {
+        color: $white;
+        font-size: 16px;
+        font-family: $font-family-lora;
+        border-color: $theme-color;
+        background-color: $theme-color;
+        border-radius: 4px;
+        // responsive
+        @media #{$xxs-device} {
+            padding: 6px 15px;
+        }
+    }
+    &__learn-more {
+        color: $white;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 4px;
+        padding: 5px 20px;
+        font-family: $font-family-lora;
+        background-color: $theme-color;
+        text-transform: capitalize;
+        &:hover {
+            border-color: $black-soft;
+            background-color: $black-soft;
+        }
+        // responsive
+        @media #{$xs-device} {
+            font-size: 16px;
+            padding: 5px 15px;
+        }
+    }
+    &__btn-gray {
+        color: $black-soft;
+        font-size: 15px;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 3px;
+        background-color: #ebebeb;
+        text-transform: uppercase;
+    }
+}

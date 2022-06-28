@@ -1,0 +1,100 @@
+/*--------- footer main style start ---------*/
+.footer-widget {
+    @media #{$md-device, $sm-device} {
+        margin-bottom: 40px;
+    }
+}
+.footer-widget-title {
+    margin-bottom: 30px;
+    h4 {
+        color: $black-soft;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+}
+.location-wrap {
+    li {
+        margin-bottom: 20px;
+        h6 {
+            color: $black-soft;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: capitalize;
+            padding-bottom: 7px;
+        }
+        p {
+            a {
+                color: $paragraph;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.category-list {
+    li {
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.newsletter-desc {
+    p {
+        padding-bottom: 20px;
+    }
+    input {
+        width: 100%;
+        padding: 8px 10px;
+        background-color: #f8f8f8;
+        border: 1px solid $bdr-color;
+        margin-bottom: 25px;
+    }
+    button {
+        color: $white;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1;
+        padding: 10px 22px;
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        background-color: $theme-color;
+        text-transform: capitalize;
+        i {
+            font-size: 20px;
+            padding-right: 5px;
+        }
+        &:hover {
+            background-color: $theme-color-2;
+        }
+    }
+}
+/*--------- footer main style end ---------*/
+
+/*------- footer bottom start -------*/
+.copyright-text {
+    // responsive
+    p {
+        font-style: italic;
+        @media #{$sm-device} {
+            padding-bottom: 15px;
+        }
+        @media #{$xxs-device} {
+            font-size: 14px;
+        }
+        a {
+            color: $theme-color;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+}
+/*------- footer bottom end -------*/
