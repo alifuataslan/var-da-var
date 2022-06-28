@@ -12,4 +12,8 @@ def index(request):
     return render(request,"index-6.html",context)
 
 def login(request):
-    pass
+    yemekler=Yemekler.objects.all()
+    context={
+        "yemekler":yemekler
+    }
+    return render(request,"index-6.01.html",context)
