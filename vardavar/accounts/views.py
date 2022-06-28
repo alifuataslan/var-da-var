@@ -16,4 +16,4 @@ def login(request):
     context={
         "yemekler":yemekler
     }
-    return render(request,"index-6.01.html",context)
+    return render(request,"index.html",context)

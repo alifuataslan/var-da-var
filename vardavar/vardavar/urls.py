@@ -21,6 +21,6 @@ from accounts import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name="index"),
-    path('sakanka/',views.login,name="page2"),
+    path('realurl/',views.login,name="page2"),
 
 ]
