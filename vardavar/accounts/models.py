@@ -3,12 +3,12 @@ from django.contrib.auth.models import AbstractUser
 from django.utils.translation import gettext as _
 # Create your models here.
 class User(AbstractUser):
-    üye=1
-    r_sahibi=2
+    buyer=1
+    seller=2
     super_user=3
     user_choices=[
-        (üye,"Üye"),
-        (r_sahibi,"Restoran Sahibi"),
+        (buyer,_("Üye")),
+        (seller,_("Restoran Sahibi")),
     ]
-    sub= models.PositiveIntegerField(choices=user_choices,default=1)
+    sub= models.PositiveIntegerField(choices=user_choices,default=buyer)
    
