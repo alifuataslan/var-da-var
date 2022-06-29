@@ -13,3 +13,6 @@ def index(request):
     }
   
     return render(request,"index-6.html",context)
+
+def login(request):
+    return render(request,"loginandregister.html")
