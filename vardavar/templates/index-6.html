@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block body %}
-
+{% load i18n %}
     
     <!-- main wrapper start -->
     <main>
@@ -14,19 +14,16 @@
 							<div class="category-toggle-wrap">
 								<div class="category-toggle">
 									<i class="ion-android-menu"></i>
-									shop by categories
+									{% translate "Yemek Çeşitleri" %}
 								</div>
 								<nav class="category-menu">
 									<ul class="categories-list">
+										{% for cate in category_foot %}
+                                        	<li><a href="shop.html">{{cate.name}}</a></li>
+                                        {% endfor %}
 										
 										
 										
-										<li><a href="shop.html">Frozen</a></li>
-										<li><a href="shop.html">Grocery</a></li>
-										<li><a href="shop.html">Kitchenware</a></li>
-										<li><a href="shop.html">Tools</a></li>
-										<li><a href="shop.html">Electronics</a></li>
-										<li><a href="shop.html">Kitchenware</a></li>
 									</ul>
 								</nav>
 							</div>
@@ -81,7 +78,7 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="section-title text-center">
-							<h2>deal of the day</h2>
+							<h2>{% translate "indirimdeki yemekler" %}</h2>
 						</div>
 					</div>
 				</div>
@@ -282,7 +279,7 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="section-title text-center">
-							<h2>Popular Categories</h2>
+							<h2>{% translate "Popüler restorantlar" %}</h2>
 						</div>
 					</div>
 				</div>
@@ -358,7 +355,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="section-title text-center">
-                            <h2>Our Products</h2>
+                            <h2>{% translate "Popüler Yemekler" %}</h2>
                         </div>
                     </div>
                 </div>
